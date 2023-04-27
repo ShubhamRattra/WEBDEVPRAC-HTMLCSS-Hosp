@@ -1,0 +1,866 @@
+<!DOCTYPE html>  
+<html lang="en">
+
+ <head>  
+
+    <meta charset="utf-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>  
+
+
+     <title>Hospital</title>  
+
+    <link rel="stylesheet" href="style_hos_home.css"> 
+
+ </head>
+
+ <body>
+
+
+
+<!---------------------------------------------------------------------------------------->   
+
+<!------------------------------ sidenav ---------------------------------------------->
+
+
+
+    <div class="sidenav">
+
+        <img src="images/sidenav/logo.png" style="margin: 30px; padding: 10px;">
+
+      <h2>Dashboard</h2>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/1.jpg" style="padding-right: 15px;">
+        Dashboard
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Dashboard 1</a>
+        <a href="#">Dashboard 2</a>
+      </div>
+
+
+      <h2>Applications</h2>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/2.jpg" style="padding-right: 15px;">
+        Pages
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Forgot Password</a>
+      </div>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/3.jpg" style="padding-right: 15px;">
+        Applications
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Mail Box</a>
+        <a href="#">Chat</a>
+        <a href="#">FAQ</a>
+      </div>
+
+
+      <h2>Components</h2>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/4.jpg" style="padding-right: 15px;">
+        UI Component
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Elements</a>
+        <a href="#">Components</a>
+      </div>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/4.jpg" style="padding-right: 15px;">
+        Widgets
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Chart Boxes 1</a>
+        <a href="#">Profile Box</a>
+      </div>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/6.jpg" style="padding-right: 15px;">
+        Forms
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Elements</a>
+        <a href="#">Widgets</a>
+      </div>
+
+      <button class="dropdown-btn"> 
+        <img src="images/sidenav/7.jpg" style="padding-right: 15px;">
+        Charts
+      </button>
+      <div class="dropdown-container">
+        <a href="#">ChartJS</a>
+        <a href="#">Apex Charts</a>
+        <a href="#">Chart sparkline</a>
+      </div>
+
+
+    </div>
+
+
+    <script>
+    
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } 
+        else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    </script>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ top_navbar ---------------------------------------------->
+
+
+
+    <div class="top_navbar">
+
+        <div class="search" style="float: left;">            
+            <form action="#">
+                <button>
+                    <img src="images/icon_search.jpg" style="width: 100%;">               
+                </button>
+                <input type="text" placeholder=" Search here..." name="search">
+            </form>
+        </div>
+
+        <div class="cliimg">
+         <a href="#"><img src="images/client_img.png" style="padding: 10px;"></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>  
+
+        <img class="topnavi" src="images/msg.jpg">
+        <img class="topnavi" src="images/bell.jpg">
+
+    </div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ container1 ---------------------------------------------->   
+
+
+
+<div class="container1">
+    
+    <div class="disp1-row">
+
+         <div class="disp1-col">
+
+              <img src="images/container1/cont1_1.png" alt="person" 
+                    style="float:left; width:70px; height:70px;">
+
+              <h3>520</h3>
+
+              <p>Doctors</p>
+
+         </div>
+
+         <div class="disp1-col">
+
+              <img src="images/container1/cont1_2.png" alt="person" 
+                    style="float:left; width:70px; height:70px;">
+
+              <h3>6969</h3>
+
+              <p>Nurses</p>
+
+         </div>
+
+    </div>
+
+
+    <div class="disp1-row">
+
+         <div class="disp1-col">
+
+              <img src="images/container1/cont1_3.png" alt="person" 
+                    style="float:left; width:70px; height:70px;">
+
+              <h3>7509</h3>
+
+              <p>Patients</p>
+
+         </div>
+
+         <div class="disp1-col">
+
+              <img src="images/container1/cont1_4.png" alt="person" 
+                    style="float:left; width:70px; height:70px;">
+
+              <h3>2110</h3>
+
+              <p>Pharmacusts</p>
+
+         </div>
+
+    </div>
+
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ container2 ---------------------------------------------->   
+
+
+
+<div class="container2">
+
+
+    <h2>Hospital Survey</h2>
+
+    <hr>  
+
+    <div class="disp2-row">
+
+
+         <div class="disp2-col">
+
+              <ul>
+                   <li>$ 305</li>
+              </ul>
+
+              <p>Today's Income</p>
+
+         </div>
+
+         <div class="disp2-col">
+
+              <ul>
+                   <li>$ 1005</li>
+              </ul>
+
+              <p>This Week's Income</p>
+
+         </div>
+
+         <div class="disp2-col">
+
+              <ul>
+                   <li>$ 5505</li>
+              </ul>
+
+              <p>This Month's Income</p>
+
+         </div>
+
+         <div class="disp2-col">
+
+              <ul>
+                   <li>$ 155615</li>
+              </ul>
+
+              <p>This Year's Income</p>
+
+         </div>
+
+    </div>
+
+    <img src="images/Graph1.jpg" style="width: 100%;">
+
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ container3 ---------------------------------------------->   
+
+
+
+<div class="container3">
+
+
+    <div class="co3-row">
+
+
+        <div class="lleft3-col">
+
+
+            <div class="search3"> 
+
+              <h2>Patients</h2>
+
+                <form action="#" style="display: flex;">
+
+                    <button>
+                        <img src="images/icon_search.jpg" style="width: 100%;">               
+                    </button>
+
+                    <input type="text" placeholder=" Search here..." name="search">
+
+                </form>
+
+            </div>
+
+
+            <div class="tabhead3">
+
+
+                <div class="disptab3-row">
+
+                     <div class="disptab3-col">
+
+                          <h4>Patients Name</h4>
+
+                     </div>
+
+                     <div class="disptab3-col">
+
+                          <h4>Department</h4>
+
+                     </div>
+
+                     <div class="disptab3-col">
+
+                          <h4>Appointment Date</h4>
+
+                     </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="tabbody3">
+
+
+                <div class="disptab3-robel">
+
+                     <div class="disptab3-cobel" style="display: flex;">
+
+                        <img src="images/1.png" 
+                             style="width: 45px; height: 45px; margin-right: 20px;">
+
+                          <h3>Jhon Kural</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>Monte Carlo</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>11/03/2020</h3>
+
+                     </div>
+
+
+                </div>
+
+                <hr>
+
+                <div class="disptab3-robel">
+
+                     <div class="disptab3-cobel" style="display: flex;">
+
+                        <img src="images/3.png" 
+                             style="width: 45px; height: 45px; margin-right: 20px;">
+
+                          <h3>Jhon Kural</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>Monte Carlo</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>11/03/2020</h3>
+
+                     </div>
+
+
+                </div>
+
+                <hr>    
+
+                <div class="disptab3-robel">
+
+                     <div class="disptab3-cobel" style="display: flex;">
+
+                        <img src="images/4.png" 
+                             style="width: 45px; height: 45px; margin-right: 20px;">
+
+                          <h3>Jhon Kural</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>Monte Carlo</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>11/03/2020</h3>
+
+                     </div>
+
+
+                </div>
+
+                <hr>
+
+                <div class="disptab3-robel">
+
+                     <div class="disptab3-cobel" style="display: flex;">
+
+                        <img src="images/6.png" 
+                             style="width: 45px; height: 45px; margin-right: 20px;">
+
+                          <h3>Jhon Kural</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>Monte Carlo</h3>
+
+                     </div>
+
+                     <div class="disptab3-cobel">
+
+                          <h3>11/03/2020</h3>
+
+                     </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="rright3-col">
+
+
+            <div class="rright3_top">
+
+                <h2>Total Recover Report</h2>
+                
+                <hr>
+
+
+
+
+
+
+
+                
+                <div class="slds-p-top--medium">
+                    <div>
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="quiz-graph">
+                            <defs>
+                                <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e5e5e5" stroke-width="1"></path>
+                                </pattern>
+                            </defs>
+                            <rect x="50" width="calc(100% - 50px)" height="300px" fill="url(#grid)" stroke="gray"></rect>
+
+                            <g class="label-title">
+                                <text x="130" y="350">Last Month</text>
+                                <text x="130" y="370">358</text>
+                                <text x="270" y="350">Current Month</text>
+                                <text x="270" y="370">194</text>
+                            </g>   
+                          
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgba(99,224,238,.5);stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color:white;stop-opacity:0"></stop>
+                            </linearGradient>
+                            <polyline fill="url(#grad)" stroke="#34becd" stroke-width="0" points="
+                            50,300
+                            51,0
+                            150,100
+                            250,80
+                            350,160
+                            450,100
+                            550,100
+                            650,150
+                            750,200
+                            750,300
+                            "></polyline>
+
+                            <polyline fill="none" stroke="#34becd" stroke-width="2" points="
+                            50,0
+                            150,100
+                            250,80
+                            350,160
+                            450,100
+                            550,100
+                            650,150
+                            750,200
+                            "></polyline>
+                            <g>
+                                <circle class="quiz-graph-start-dot" cx="50" cy="0" data-value="7.2" r="6"></circle>
+                                <circle class="quiz-graph-dot" cx="150" cy="100" data-value="8.1" r="6" q-title="Q1" answer-count="200" percent-value="66%"></circle>
+                                <circle class="quiz-graph-dot" cx="250" cy="80" data-value="7.7" r="6" q-title="Q2" answer-count="220" percent-value="73%"></circle>
+                                <circle class="quiz-graph-dot" cx="350" cy="160" data-value="6.8" r="6" q-title="Q3" answer-count="140" percent-value="46%"></circle>
+                                <circle class="quiz-graph-dot" cx="450" cy="100" data-value="6.7" r="6" q-title="Q4" answer-count="200" percent-value="66%"></circle>
+                                <circle class="quiz-graph-dot" cx="550" cy="100" data-value="6.7" r="6" q-title="Q5" answer-count="200" percent-value="66%"></circle>
+                                <circle class="quiz-graph-dot" cx="650" cy="150" data-value="6.7" r="6" q-title="Q6" answer-count="150" percent-value="50%"></circle>
+                                <circle class="quiz-graph-dot" cx="750" cy="200" data-value="6.7" r="6" q-title="Complited Quiz" answer-count="100" percent-value="33%"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            
+
+
+
+
+
+
+
+
+
+            </div>  
+
+
+            <div class="rright3_bottom">
+
+                <h2>Total Death Report</h2>
+                
+                <hr>
+
+                <img src="images/Graph3.jpg" style="width: 100%;"> 
+                
+            </div>          
+                
+
+        </div> 
+
+
+    </div>
+
+
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ container4 ---------------------------------------------->
+
+
+
+<div class="container4">
+
+
+    <div id="btn_wrapper">
+
+        <h2>Hospital Staff</h2>
+
+         <button class="But_prev"> &#8249; </button>
+         <button class="But_next"> &#8250; </button>
+
+    </div>
+
+    <hr>            
+
+    <section>
+          
+        <div class="swiper mySwiper container">
+            
+          <div class="swiper-wrapper content">
+
+              
+            <div class="swiper-slide card">
+                
+              <div class="card-content">
+                  
+                <div class="image">
+                  <img src="images/sliderimages/1.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+            
+
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/2.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+        
+
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/3.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+            
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/4.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+                
+              </div>
+
+            </div>
+            
+
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/1.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+            
+
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/2.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+            
+
+            <div class="swiper-slide card">
+
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/2.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+
+            </div>
+            
+
+            <div class="swiper-slide card">
+                
+              <div class="card-content">
+
+                <div class="image">
+                  <img src="images/sliderimages/3.jpg">
+                </div>
+                <div class="name-profession">
+                  <span class="name">Dr. Sysla J</span>
+                  <span class="profession">Doctor</span>
+                </div>
+
+              </div>
+              
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+      
+    </div>
+
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      
+      var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".But_next",
+              prevEl: ".But_prev",
+            },
+          });
+
+    </script>
+
+
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!------------------------------ container5 ---------------------------------------------->   
+
+
+
+<div class="container5">
+
+        <div class="co5-row">
+
+            <div class="lleft5-col">
+
+                <h3>Recent Activity</h3>
+                                  
+                <hr>
+
+                <ul>
+                     <li>5 min ago</li>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                </ul>
+
+                <ul>
+                     <li>5 min ago</li>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                </ul>
+
+                <ul>
+                     <li>5 min ago</li>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                </ul>
+
+                <ul>
+                     <li>5 min ago</li>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque</p>
+                </ul>
+
+            </div>
+
+
+            <div class="rright5-col">
+
+                <h3>Recent Activity</h3>
+                
+                <hr>
+
+                <img src="images/Graph4.jpg" style="width: 100%;">                  
+                    
+            </div>          
+
+        </div>
+
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------->
+
+<!-------------------------------------- footer ------------------------------------------>
+
+
+
+<footer class="footer">
+
+    <div class="foot">
+
+       <p>   
+       2020 &copy; Influence - Designed by &hearts; <span style="color:#2e4765;">Dashboard</span>
+       </p>
+
+    </div>
+
+</footer>
+
+
+
+<!----------------------------------------------------------------------------------------> 
+
+
+
+ </body>
+
+</html> 
